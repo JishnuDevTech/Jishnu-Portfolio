@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> jishnu's Portfolio</title>
+
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            height: 100%;
+            scroll-behavior: smooth;
+        }
+
+        .parallax {
+            background-image: url("nature.jpg"); /* Replace with your image */
+            min-height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            flex-direction: column;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #649bee;
+        }
+
+        .greeting {
+            text-align: center;
+            color: white;
+            animation: fadeIn 4s;
+            margin-top: 100px; /* Adjust this value if needed */
+        }
+
+        .greeting h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+
+        .greeting p {
+            font-size: 1.5em;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2em;
+            color: white;
+            cursor: pointer;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        section:nth-of-type(odd) {
+            background-color: #f4f4f4;
+        }
+
+        section:nth-of-type(even) {
+            background-color: #e2e2e2;
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .about-container {
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .about-container img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .skill {
+            position: relative;
+            width: 200px;
+            text-align: center;
+        }
+
+        .skill img {
+            width: 100%;
+            border-radius: 100%;
+            object-fit: fill;
+        }
+
+        .skill .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .resume-section {
+            background-image: url("resume.jpg"); /* Replace with your image */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            position: relative;
+        }
+
+        .resume-button {
+            background-color: #4076c2;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-button {
+            background-color: #5fa3fb;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .footer .social-icons {
+            margin-bottom: 10px;
+        }
+
+        .footer .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        .rocket {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 2em;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50%;
+            z-index: 1000;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .portfolio-item {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .portfolio-item h3 {
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .portfolio-item p {
+            font-size: 1rem;
+            color: #666;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            padding: 3rem 0;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center; /* optional */
+}
+
+.portfolio-item {
+  flex: 1 1 400px; /* grows/shrinks, min 400px */
+}
+
+    </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <div class="parallax">
+        <div class="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#passion">Passion</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="greeting">
+            <h1>Hi, I am Jishnu</h1>
+            <p>"Turning Complex Problems into Elegant Solutions"</p>
+        </div>
+        <a href="#about" class="scroll-down">↓</a>
+    </div>
+
+    <section id="about">
+        <h2>LITTLE BIT ABOUT ME</h2>
+        <div class="about-container">
+            <img src="profile.png" alt="Jishnu"> <!-- Replace with your image -->
+            <p>
+                Hello! I'm Jishnu Rahegaonkar, a passionate and dedicated Software Engineer with a strong<br><br>
+                foundation in computer science and extensive hands-on experience in designing, developing and<br> <br>
+                maintaining software applications.My journey in software engineering began with a keen interest<br> <br>
+                in problem-solving and technology, which led me to pursue a Diploma in Information Technology.<br><br>
+                Throughout my academic and professional career, I have honed my skills in various programming<br> <br>
+                languages, software development methodologies, and cutting-edge technologies.I thrive in<br> <br>
+                collaborative environments and am committed to continuous learning and innovation.<br><br><br>
+                When I am not on the computer I like to play cricket, Listening music and sketching.
+              
+           </p>
+                </div>
+    </section>
+
+    <section id="passion">
+        <h2>PASSION</h2>
+        <div class="skills">
+            
+            <div class="skill">
+                <img src="coding.png" alt="Design"> <!-- Replace with your image -->
+                <div class="overlay">DSA</div>
+                <p>Coding</p>
+            </div>
+            <div class="skill">
+                <img src="problemsolving.png" alt="Design"> <!-- Replace with your image -->
+                <div class="overlay">Database Management</div>
+                <p>problem Solving</p>
+            </div>
+            <div class="skill">
+                <img src="webdevelopment.jpeg" alt="Development"> <!-- Replace with your image -->
+                <div class="overlay">Development</div>
+                <p>Web development</p>
+            </div>
+            <div class="skill">
+                <img src="appdevelopment.png" alt="Development"> <!-- Replace with your image -->
+                <div class="overlay">Development</div>
+                <p>App development</p>
+            </div>
+        </div>
+        </div>
+        </div>
+       </section>
+       
+       
+
+    <section class="resume-section">
+        <a href="Jishnu_Rahegaonkar_Resume copy.pdf" class="resume-button" target="_blank">Download Resume</a> <!-- Replace with your resume link -->
+    </section>
+
+   <section id="work">
+    <h2>PROJECTS</h2>
+    <div class="projects">
+        <div class="container">
+            <div class="grid-container">
+
+                <div class="portfolio-item">
+                    <a href="https://jishnu-art-gallery.netlify.app"><img src="blog.png" width="400" height="200" alt="Project 1"></a>
+                    <h3>Art Gallery website</h3>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="https://jishnu-dev-hub.netlify.app"><img src="sample.png" alt="Project 2"></a>
+                    <h3>Coding Hub</h3>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="file:///Users/Girsh/Desktop/%20portfolio/client-portfolio/index.html"><img src="client.png" alt="Project 3"></a>
+                    <h3>Portfolio for client</h3>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="https://jishnu-digital-resume.netlify.app"><img src="resume.png" alt="Project 4"></a>
+                    <h3>Digital Resume</h3>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="https://jishnu-card.netlify.app"><img src="card.png" alt="Project 5"></a>
+                    <h3>Digital Visiting Card</h3>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="https://about-jishnu.netlify.app"><img src="about.png" alt="Project 6"></a>
+                    <h3>About me website</h3>
+                </div>
+
+            </div> <!-- grid-container -->
+        </div> <!-- container -->
+    </div> <!-- projects -->
+
+</section>
+
+    <section id="contact">
+        <h2>CONTACT</h2>
+        <div class="about-container">
+            <img src="mail.png">
+            <a href="mailto:jishnurahegaonkar@gmail.com" class="contact-button">Email Me</a> <!-- Replace with your email -->
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-icons">
+           <a href="https://github.com/JishnuDevTech?tab=repositories" target="_blank">
+  <img src="git.png" width="25" height="20">
+</a>
+            
+         </div>
+        <p>&copy; 2024 Jishnu Rahegaonkar. All rights reserved.</p>
+    </footer>
+
+    <a href="#top" class="rocket">↑</a>
+
+</body>
+</html>
