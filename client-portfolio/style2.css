@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: #fff;
+    text-align: center;
+    animation: gradientBG 15s ease infinite;
+    overflow-x: hidden;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 80px 20px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+    animation: slideIn 1s ease-out;
+}
+
+/* Header Text */
+header h1 {
+    font-size: 2.5em;
+    animation: fadeIn 2s ease-in-out;
+    margin-bottom: 0;
+}
+
+/* Tagline */
+header .tagline {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    color: #ff6347;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Section Styles */
+section {
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.4);
+    color: #ffs;
+    animation: fadeUp 1.5s ease-in-out;
+}
+
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+section h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #ff6347;
+}
+
+/* Skills List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+ul li {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+ul li:hover {
+    background: #ff6347;
+    transform: scale(1.05);
+}
+
+/* Progress Bars */
+.progress-bar {
+    height: 12px;
+    border-radius: 8px;
+    background: #ddd;
+    margin-top: 10px;
+    transition: width 1s ease-out;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    animation: fadeInFooter 1s ease-in-out;
+}
+
+@keyframes fadeInFooter {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: #ff6347;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Hover Effects */
+a {
+    color: #ff6347;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 60px 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+}
