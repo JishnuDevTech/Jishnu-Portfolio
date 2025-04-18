@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> jishnu's Portfolio</title>
 
-    
+
     <style>
-        body, html {
+        body,
+        html {
             margin: 0;
             padding: 0;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
             height: 100%;
             scroll-behavior: smooth;
         }
 
         .parallax {
-            background-image: url("nature.jpg"); /* Replace with your image */
+            background-image: url("nature.jpg");
+            /* Replace with your image */
             min-height: 100vh;
             background-attachment: fixed;
             background-position: center;
@@ -64,7 +67,8 @@
             text-align: center;
             color: white;
             animation: fadeIn 4s;
-            margin-top: 100px; /* Adjust this value if needed */
+            margin-top: 100px;
+            /* Adjust this value if needed */
         }
 
         .greeting h1 {
@@ -81,6 +85,7 @@
                 opacity: 0;
                 transform: translateY(-20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -99,12 +104,19 @@
         }
 
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
                 transform: translateY(0);
             }
+
             40% {
                 transform: translateY(-10px);
             }
+
             60% {
                 transform: translateY(-5px);
             }
@@ -130,7 +142,7 @@
 
         .about-container {
             display: flex;
-            align-items:center;
+            align-items: center;
             justify-content: center;
             flex-direction: column;
         }
@@ -176,8 +188,10 @@
             opacity: 0;
             transition: opacity 0.3s;
         }
+
         .resume-section {
-            background-image: url("resume.jpg"); /* Replace with your image */
+            background-image: url("resume.jpg");
+            /* Replace with your image */
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -245,6 +259,7 @@
             border-radius: 50%;
             z-index: 1000;
         }
+
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -273,6 +288,7 @@
             font-size: 1rem;
             color: #666;
         }
+
         .container {
             max-width: 960px;
             margin: 0 auto;
@@ -288,22 +304,24 @@
             text-align: center;
             margin-bottom: 1rem;
         }
-        
+
         .grid-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2.5rem;
-  justify-content: center; /* optional */
-}
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            justify-content: center;
+            /* optional */
+        }
 
-.portfolio-item {
-  flex: 1 1 400px; /* grows/shrinks, min 400px */
-}
-
+        .portfolio-item {
+            flex: 1 1 400px;
+            /* grows/shrinks, min 400px */
+        }
     </style>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
+
 <body>
     <div class="parallax">
         <div class="navbar">
@@ -334,15 +352,15 @@
                 languages, software development methodologies, and cutting-edge technologies.I thrive in<br> <br>
                 collaborative environments and am committed to continuous learning and innovation.<br><br><br>
                 When I am not on the computer I like to play cricket, Listening music and sketching.
-              
-           </p>
-                </div>
+
+            </p>
+        </div>
     </section>
 
     <section id="passion">
         <h2>PASSION</h2>
         <div class="skills">
-            
+
             <div class="skill">
                 <img src="coding.png" alt="Design"> <!-- Replace with your image -->
                 <div class="overlay">DSA</div>
@@ -366,75 +384,85 @@
         </div>
         </div>
         </div>
-       </section>
-       
-       
-
-    <section class="resume-section">
-        <a href="Jishnu_Rahegaonkar_Resume copy.pdf" class="resume-button" target="_blank">Download Resume</a> <!-- Replace with your resume link -->
     </section>
 
-   <section id="work">
-    <h2>PROJECTS</h2>
-    <div class="projects">
-        <div class="container">
-            <div class="grid-container">
 
-                <div class="portfolio-item">
-                    <a href="https://jishnu-art-gallery.netlify.app"><img src="blog.png" width="400" height="200" alt="Project 1"></a>
-                    <h3>Art Gallery website</h3>
-                </div>
 
-                <div class="portfolio-item">
-                    <a href="https://jishnu-dev-hub.netlify.app"><img src="sample.png" alt="Project 2"></a>
-                    <h3>Coding Hub</h3>
-                </div>
+    <section class="resume-section">
+        <a href="Jishnu_Rahegaonkar_Resume copy.pdf" class="resume-button" target="_blank">Download Resume</a>
+        <!-- Replace with your resume link -->
+    </section>
 
-                <div class="portfolio-item">
-                    <a href="file:///Users/Girsh/Desktop/%20portfolio/client-portfolio/index.html"><img src="client.png" alt="Project 3"></a>
-                    <h3>Portfolio for client</h3>
-                </div>
+    <section id="work">
+        <h2>PROJECTS</h2>
+        <div class="projects">
+            <div class="container">
+                <div class="grid-container">
 
-                <div class="portfolio-item">
-                    <a href="https://jishnu-digital-resume.netlify.app"><img src="resume.png" alt="Project 4"></a>
-                    <h3>Digital Resume</h3>
-                </div>
+                    <div class="portfolio-item">
+                        <a href="https://jishnu-art-gallery.netlify.app"><img src="blog.png" width="400" height="200"
+                                alt="Project 1"></a>
+                        <h3>Art Gallery website</h3>
+                    </div>
 
-                <div class="portfolio-item">
-                    <a href="https://jishnu-card.netlify.app"><img src="card.png" alt="Project 5"></a>
-                    <h3>Digital Visiting Card</h3>
-                </div>
+                    <div class="portfolio-item">
+                        <a href="https://jishnu-dev-hub.netlify.app"><img src="sample.png" alt="Project 2"></a>
+                        <h3>Coding Hub</h3>
+                    </div>
 
-                <div class="portfolio-item">
-                    <a href="https://about-jishnu.netlify.app"><img src="about.png" alt="Project 6"></a>
-                    <h3>About me website</h3>
-                </div>
+                    <div class="portfolio-item">
+                        <a href="file:///Users/Girsh/Desktop/%20portfolio/client-portfolio/index.html"><img
+                                src="client.png" alt="Project 3"></a>
+                        <h3>Portfolio for client</h3>
+                    </div>
 
-            </div> <!-- grid-container -->
-        </div> <!-- container -->
-    </div> <!-- projects -->
+                    <div class="portfolio-item">
+                        <a href="https://jishnu-digital-resume.netlify.app"><img src="resume.png" alt="Project 4"></a>
+                        <h3>Digital Resume</h3>
+                    </div>
 
-</section>
+                    <div class="portfolio-item">
+                        <a href="https://jishnu-card.netlify.app"><img src="card.png" alt="Project 5"></a>
+                        <h3>Digital Visiting Card</h3>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <a href="https://about-jishnu.netlify.app"><img src="about.png" alt="Project 6"></a>
+                        <h3>About me website</h3>
+                    </div>
+                    <div class="portfolio-item">
+                        <a href="https://daily-taskflow.netlify.app"><img src="Screenshot 2025-04-18 at 5.01.48 PM.png"
+                                alt="Project 7"></a>
+                        <h3>Task Flow</h3>
+                    </div>
+
+                </div> <!-- grid-container -->
+            </div> <!-- container -->
+        </div> <!-- projects -->
+
+    </section>
 
     <section id="contact">
         <h2>CONTACT</h2>
         <div class="about-container">
             <img src="mail.png">
-            <a href="mailto:jishnurahegaonkar@gmail.com" class="contact-button">Email Me</a> <!-- Replace with your email -->
-            </div>
+            <a href="mailto:jishnurahegaonkar@gmail.com" class="contact-button">Email Me</a>
+            <!-- Replace with your email -->
+        </div>
     </section>
 
     <footer class="footer">
         <div class="social-icons">
-           <a href="https://github.com/JishnuDevTech?tab=repositories" target="_blank">
-  <img src="git.png" width="25" height="20">
-</a>
-            
-         </div>
+            <a href="https://github.com/JishnuDevTech?tab=repositories" target="_blank">
+                <img src="git.png" width="25" height="20">
+            </a>
+
+        </div>
         <p>&copy; 2024 Jishnu Rahegaonkar. All rights reserved.</p>
     </footer>
 
     <a href="#top" class="rocket">↑</a>
 
 </body>
+
 </html>
