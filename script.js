@@ -145,9 +145,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const typedTextSpan = document.querySelector('.typed-text');
     const cursorSpan = document.querySelector('.cursor-typing');
     
-    const textArray = ['Software Developer', 'Web Designer', 'UI/UX Enthusiast', 'Problem Solver'];
-    const typingDelay = 100;
-    const erasingDelay = 50;
+    const textArray = ['Software Developer', 'Web Developer', 'UI/UX Enthusiast', 'Problem Solver', 'App Developer'];
+    const typingDelay = 110;
+    const erasingDelay = 70;
     const newTextDelay = 2000;
     let textArrayIndex = 0;
     let charIndex = 0;
@@ -229,18 +229,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectDetailsTriggers = document.querySelectorAll('.project-details-trigger');
     
     const projectDetails = {
-        'art-gallery': {
-            title: 'Art Gallery Website',
-            description: 'An elegant online platform showcasing various art pieces with detailed descriptions and artist information. The website features a clean, modern design with smooth transitions and animations to enhance user experience.',
+        'Streaky': {
+            title: 'Streaky Website',
+            description: 'Streaky is a habit-tracking web app designed to help users turn small daily actions into powerful streaks. It makes progress visible, consistency rewarding, and habit-building simple.',
             features: [
-                'Responsive gallery layout',
-                'Artist profiles and portfolios',
-                'Artwork categorization and filtering',
-                'Contact form for inquiries',
-                'Admin panel for content management'
+                'Secure authentication with Email & Google',
+                'Visual progress to keep motivation high',
+                'Fully responsive — smooth on mobile & desktop',
+                'Settings for User ease',
             ],
-            technologies: ['HTML', 'CSS', 'JavaScript'],
-            screenshots: ['blog copy.png', 'art2.png']
+            technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
+            screenshots: ['streaky2.png', 'streaky3.png']
         },
         'task-focus': {
             title: 'Daily Task Focus',
@@ -256,17 +255,16 @@ document.addEventListener('DOMContentLoaded', function() {
             screenshots: ['focus copy.png', 'focus2.png']
         },
         'task-flow': {
-            title: 'Task Flow',
-            description: 'An advanced task management application with workflow optimization features. The app helps teams track progress, assign tasks, and optimize their workflow through intuitive interfaces and automation.',
+            title: 'TimeBound',
+            description: 'This platform is a high-performance productivity ecosystem that seamlessly integrates a precision Pomodoro time-management system with a dynamic daily task manager.',
             features: [
-                'Kanban board with drag-and-drop interface',
-                'Team collaboration tools',
-                'Automated workflow suggestions',
-                'Time tracking and analytics',
-                'Integration with other productivity tools'
+                'Responsive layout',
+                'User profiles and task management system',
+                'Time Management categorization and filtering',
+                'Settings for User ease',
             ],
             technologies: ['HTML', 'CSS', 'Firebase', 'JAVA SCRIPT',],
-            screenshots: ['Screenshot 2025-04-18 at 5.01.48 PM copy.png', 'flow2.png']
+            screenshots: ['timebound2.png', 'timebound3.png']
         }
     };
     
@@ -298,7 +296,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         `).join('')}
                     </div>
                     <div class="modal-buttons">
-                        <a href="#" class="btn btn-primary">Visit Project</a>
+                        <a href="https://github.com/JishnuDevTech" class="btn btn-primary">Visit Project</a>
                     </div>
                 `;
                 
