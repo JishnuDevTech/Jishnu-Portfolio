@@ -241,20 +241,20 @@ document.addEventListener('DOMContentLoaded', function() {
             technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
             screenshots: ['streaky2.png', 'streaky3.png']
         },
-        'task-focus': {
-            title: 'Daily Task Focus',
-            description: 'A productivity application designed to help users manage their daily tasks and improve focus. The app employs the Pomodoro technique and provides analytics on productivity patterns.',
+        'bunk-smart': {
+            title: 'Bunk Smart',
+            description: 'Bunk Smart is a smart attendance tracking web app designed for students to monitor attendance, analyze bunk patterns, and make informed decisions about class participation.',
             features: [
-                'Task management with priority settings',
-                'Pomodoro timer integration',
+                'Visual analytics dashboard',
+                'Bunk prediction insights',
                 'Productivity analytics and reports',
-                'Daily and weekly goal setting',
-                'Notification and reminder system'
+                'Cloud-based data storage',
+                'Responsive UI (Mobile + Desktop)'
             ],
             technologies: ['HTML', 'CSS', 'Firebase', 'JAVA SCRIPT', 'TYPE SCRIPT'],
-            screenshots: ['focus copy.png', 'focus2.png']
+            screenshots: ['bunk2.png', 'bunk3.png']
         },
-        'task-flow': {
+        'time-bound': {
             title: 'TimeBound',
             description: 'This platform is a high-performance productivity ecosystem that seamlessly integrates a precision Pomodoro time-management system with a dynamic daily task manager.',
             features: [
