@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jishnu Rahegaonkar portfolio showcasing personal projects, skills, and development work.">
     <title>Jishnu Rahegaonkar | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Preloader -->
     <div class="preloader">
         <div class="loader">
             <span class="circle"></span>
@@ -25,15 +24,13 @@
         </div>
     </div>
 
-    <!-- Theme Toggle Button -->
-    <div class="theme-toggle">
+    <div class="theme-toggle" aria-label="Toggle theme">
         <i class="fas fa-moon"></i>
         <i class="fas fa-sun"></i>
     </div>
 
-    <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
+        <div class="nav-container container">
             <div class="logo">JR</div>
             <div class="nav-links">
                 <a href="#home" class="nav-link active">Home</a>
@@ -42,7 +39,7 @@
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <div class="menu-toggle">
+            <div class="menu-toggle" aria-label="Toggle navigation">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -50,7 +47,6 @@
         </div>
     </nav>
 
-    <!-- Mobile Navigation -->
     <div class="mobile-nav">
         <a href="#home" class="mobile-nav-link">Home</a>
         <a href="#about" class="mobile-nav-link">About</a>
@@ -59,344 +55,423 @@
         <a href="#contact" class="mobile-nav-link">Contact</a>
     </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="glitch" data-text="Jishnu Rahegaonkar">Jishnu Rahegaonkar</h1>
-                <div class="type-container">
-                    I'm a <span class="typed-text"></span><span class="cursor-typing">&nbsp;</span>
+    <main>
+        <section id="home" class="hero section">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">Full Stack Web Developer • Aspiring Software Engineer</p>
+                    <h1 class="glitch" data-text="Jishnu Rahegaonkar">Jishnu Rahegaonkar</h1>
+                    <div class="type-container">
+                        <span>I'm a </span><span class="typed-text"></span><span class="cursor-typing"></span>
+                    </div>
+                    <p class="hero-description">Aspiring Full Stack Web Developer with hands-on experience in HTML, CSS, JavaScript, and responsive web design. I build clean, user-focused web applications by combining logical problem-solving with modern UI practices.</p>
+
+                    <div class="hero-highlights">
+                        <span class="highlight-pill">Full Stack</span>
+                        <span class="highlight-pill">Responsive UI</span>
+                        <span class="highlight-pill">Problem Solving</span>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-box">
+                            <strong>3+</strong>
+                            <span>featured builds</span>
+                        </div>
+                        <div class="stat-box">
+                            <strong>100%</strong>
+                            <span>curiosity</span>
+                        </div>
+                        <div class="stat-box">
+                            <strong>24/7</strong>
+                            <span>learning mode</span>
+                        </div>
+                    </div>
                 </div>
-                <p class="hero-description">Turning Complex Problems into Elegant Solutions</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+
+                <div class="hero-visual">
+                    <div class="portrait-shell">
+                        <div class="portrait-glow"></div>
+                        <img src="assets/profile/hero.jpg" alt="Jishnu Rahegaonkar portrait">
+                    </div>
                 </div>
             </div>
-            <div class="about-image">
-                <div class="image-wrapper">
-                    <img src="-wt1s7g.jpg" alt="Jishnu Rahegaonkar">
-                </div>
-            </div>
-            <a href="#about" class="scroll-down">
-                <span class="mouse">
-                    <span class="wheel"></span>
-                </span>
-                <span class="arrow">
-                    <span></span>
-                    <span></span>
-                </span>
+
+            <a href="#about" class="scroll-down" aria-label="Scroll down">
+                <span class="mouse"><span class="wheel"></span></span>
+                <span class="arrow"><span></span><span></span></span>
             </a>
-            <div class="hero-bg">
-                <div class="hero-bg-circle c1"></div>
-                <div class="hero-bg-circle c2"></div>
-                <div class="hero-bg-circle c3"></div>
-            </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-        <div class="section-title">
-            <h2>About Me</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="about-content">
-            <div class="about-image">
-                <div class="image-wrapper">
-                    <img src="new_img2.jpeg" alt="Jishnu Rahegaonkar">
+        <section class="impact section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Why I Build</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="impact-grid">
+                    <div class="impact-card">
+                        <span class="impact-number">01</span>
+                        <h3>Craft</h3>
+                        <p>Great products feel intuitive, polished, and effortless to use. I care deeply about that experience.</p>
+                    </div>
+                    <div class="impact-card">
+                        <span class="impact-number">02</span>
+                        <h3>Execution</h3>
+                        <p>I enjoy taking ideas from rough concept to real, usable product through practical engineering.</p>
+                    </div>
+                    <div class="impact-card">
+                        <span class="impact-number">03</span>
+                        <h3>Learning</h3>
+                        <p>Technology changes quickly, and I enjoy staying sharp by building, improving, and iterating.</p>
+                    </div>
                 </div>
             </div>
-            <div class="about-text">
-                <p>Hello! I'm <span class="highlight">Jishnu Rahegaonkar</span>, a passionate and dedicated aspiring
-                    <span class="highlight">Software Engineer</span> with a strong foundation building in computer
-                    science and Engineering and extensive hands-on experience in designing, developing and maintaining
-                    software applications.</p>
+        </section>
 
-                <p>My journey in software engineering began with a keen interest in problem-solving and technology,
-                    which led me to pursue a Diploma in Computer Science and Engineering. Throughout my academic and
-                    professional career, I have honed my skills in various programming languages, software development
-                    methodologies, and cutting-edge technologies.</p>
-
-                <p>I thrive in collaborative environments and am committed to continuous learning and innovation. When I
-                    am not on the computer I like to play guitar, listening to music and sketching.</p>
-
-                <div class="about-buttons">
-                    <a href="Jishnu_Rahegaonkar_CV.pdf" class="btn btn-download" download>
-                        <i class="fas fa-download"></i> Download Resume
-                    </a>
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                    <div class="underline"></div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-        <div class="section-title">
-            <h2>My Skills & Passions</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3>Core Competencies</h3>
-                <div class="skills-grid">
-                    <div class="skill-item" data-aos="fade-up">
-                        <div class="skill-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Coding</h4>
-                            <p>Data Structures & Algorithms</p>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-wrapper">
+                            <img src="assets/profile/about.jpg" alt="Jishnu Rahegaonkar portrait">
                         </div>
                     </div>
-                    <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
-                        <div class="skill-icon">
-                            <i class="fas fa-lightbulb"></i>
+
+                    <div class="about-text">
+                        <p>Hello! I'm <span class="highlight">Jishnu Rahegaonkar</span>, an aspiring <span class="highlight">Full Stack Web Developer</span> with hands-on experience in HTML, CSS, JavaScript, and responsive web design.</p>
+                        <p>Currently pursuing a <span class="highlight">Diploma in Computer Science and Engineering</span>, I’m focused on building clean, user-centric web applications by combining logical problem-solving with modern UI practices and practical project development.</p>
+                        <p>I enjoy creating experiences that are both technically sound and visually polished. My goal is to keep learning, build more impactful products, and grow into a software engineer who can turn ideas into real, useful digital solutions.</p>
+
+                        <div class="about-points">
+                            <div class="point-item">
+                                <i class="fas fa-code"></i>
+                                <span>Strong fundamentals in web development</span>
+                            </div>
+                            <div class="point-item">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Product-minded approach with attention to UX</span>
+                            </div>
+                            <div class="point-item">
+                                <i class="fas fa-rocket"></i>
+                                <span>Driven by execution, learning, and curiosity</span>
+                            </div>
                         </div>
-                        <div class="skill-info">
-                            <h4>Problem Solving</h4>
-                            <p>Database Management</p>
-                        </div>
-                    </div>
-                    <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
-                        <div class="skill-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>Web Development</h4>
-                            <p>Frontend & Backend</p>
-                        </div>
-                    </div>
-                    <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
-                        <div class="skill-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <div class="skill-info">
-                            <h4>App Development</h4>
-                            <p>Mobile Solutions</p>
+
+                        <div class="about-buttons">
+                            <a href="assets/docs/Jishnu_Rahegaonkar_CV.pdf" class="btn btn-download" download>
+                                <i class="fas fa-download"></i> Download Resume
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="tech-stack">
-                <h3>Tech Stack</h3>
-                <div class="tech-container">
-                    
-                    <div class="tech-item" data-name="JavaScript">
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <div class="tech-item" data-name="Flutter">
-                        <i class="devicon-flutter-plain"></i>
-                    </div>
-                    <div class="tech-item" data-name="Dart">
-                        <i class="devicon-dart-plain"></i>
-                    </div>
-                    <div class="tech-item" data-name="HTML">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <div class="tech-item" data-name="CSS">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <div class="tech-item" data-name="MongoDB">
-                        <i class="devicon-mongodb-plain"></i>
-                    </div>
-                    <div class="tech-item" data-name="Git">
-                        <i class="fab fa-git-alt"></i>
-                    </div>
-                    <div class="tech-item" data-name="Python">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    <div class="tech-item" data-name="Database">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    
-                    
+        </section>
+
+        <section class="services section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>What I Bring</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h3>Design-Led Thinking</h3>
+                        <p>I build interfaces that feel clean, modern, and intuitive, with attention to clarity and visual hierarchy.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                        <h3>Product Execution</h3>
+                        <p>I turn ideas into usable products by combining logic, speed, and practical problem-solving.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon"><i class="fas fa-bolt"></i></div>
+                        <h3>Fast Iteration</h3>
+                        <p>I move from concept to prototype to polished product quickly, refining based on usability and feedback.</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects section">
-        <div class="section-title">
-            <h2>My Projects</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="projects-filter">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="web">Web</button>
-            <button class="filter-btn" data-filter="app">App</button>
-            <button class="filter-btn" data-filter="design">Design</button>
-        </div>
+        <section id="skills" class="skills section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Skills & Focus</h2>
+                    <div class="underline"></div>
+                </div>
 
-        <div class="projects-grid">
-            <div class="project-card" data-category="web">
-                <div class="project-image">
-                    <img src="streaky.png" alt="Streaky">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h3>Streaky</h3>
-                            <p>A clean, responsive habit-tracking web app focused on consistency and streak building.
-                            </p>
-                            <div class="project-links">
-                                <a href="https://streak-hub.netlify.app/" target="_blank" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="#" class="project-link project-details-trigger" data-project="Streaky">
-                                    <i class="fas fa-info-circle"></i>
-                                </a>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Core Competencies</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                                <div class="skill-info">
+                                    <h4>HTML</h4>
+                                    <p>Semantic structure and clean page foundations</p>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                                <div class="skill-info">
+                                    <h4>CSS</h4>
+                                    <p>Responsive layouts and polished UI styling</p>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                                <div class="skill-info">
+                                    <h4>JavaScript</h4>
+                                    <p>Interactive features and real user flows</p>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                                <div class="skill-info">
+                                    <h4>Database</h4>
+                                    <p>Data handling and application logic support</p>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
+                                <div class="skill-info">
+                                    <h4>Problem Solving</h4>
+                                    <p>Logical thinking and practical solutions</p>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                                <div class="skill-info">
+                                    <h4>UI/UX</h4>
+                                    <p>User-friendly interfaces and modern design sense</p>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                                <div class="skill-info">
+                                    <h4>Python</h4>
+                                    <p>Foundation for scripting and learning backend logic</p>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                                <div class="skill-info">
+                                    <h4>Git</h4>
+                                    <p>Version control and collaborative development</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">
+                        <h3>Professional Snapshot</h3>
+                        <div class="tech-container">
+                            <div class="tech-item" data-name="HTML"><i class="fab fa-html5"></i></div>
+                            <div class="tech-item" data-name="CSS"><i class="fab fa-css3-alt"></i></div>
+                            <div class="tech-item" data-name="JavaScript"><i class="fab fa-js"></i></div>
+                            <div class="tech-item" data-name="Git"><i class="fab fa-git-alt"></i></div>
+                            <div class="tech-item" data-name="Database"><i class="fas fa-database"></i></div>
+                            <div class="tech-item" data-name="Python"><i class="fab fa-python"></i></div>
+                            <div class="tech-item" data-name="UI/UX"><i class="fas fa-paint-brush"></i></div>
+                            <div class="tech-item" data-name="Problem Solving"><i class="fas fa-lightbulb"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Selected Projects</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="app">App</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="assets/projects/streaky/cover.png" alt="Streaky">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3>Streaky</h3>
+                                    <p>Responsive habit-tracking web app focused on daily consistency, strong user flow, and a clean mobile-first experience.</p>
+                                    <div class="project-links">
+                                        <a href="https://streak-hub.netlify.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="project-link project-details-trigger" data-project="Streaky"><i class="fas fa-info-circle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="assets/projects/timebound/cover.png" alt="Daily Task Focus">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3>Daily Task Focus</h3>
+                                    <p>Productivity web app with task management, a Pomodoro timer, and analytics features to help users stay focused.</p>
+                                    <div class="project-links">
+                                        <a href="https://daily-task-focus.netlify.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="project-link project-details-trigger" data-project="daily-task-focus"><i class="fas fa-info-circle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="design">
+                        <div class="project-image">
+                            <img src="assets/projects/bunk-smart/cover.png" alt="Portfolio">
+                            <div class="project-overlay">
+                                <div class="project-info">
+                                    <h3>Portfolio</h3>
+                                    <p>Personal portfolio website built to present work, skills, and professional identity with a modern and polished look.</p>
+                                    <div class="project-links">
+                                        <a href="https://jishnu-portfolio.netlify.app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                        <a href="#" class="project-link project-details-trigger" data-project="portfolio"><i class="fas fa-info-circle"></i></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="project-card" data-category="web">
-                <div class="project-image">
-                    <img src="bunk1.png" alt="Bunk Smart">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h3>Bunk Smart</h3>
-                            <p>🎓 Smart attendance SaaS with analytics, bunk insights, and cloud sync</p>
-                            <div class="project-links">
-                                <a href="https://bunk-smart.netlify.app" target="_blank" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="#" class="project-link project-details-trigger" data-project="bunk-smart">
-                                    <i class="fas fa-info-circle"></i>
-                                </a>
+        </section>
+
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Let’s Connect</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-intro">
+                            <h3>Building thoughtful, useful web experiences.</h3>
+                            <p>I’m open to exciting opportunities, collaboration, and projects where I can contribute with clean code, design thinking, and strong problem-solving.</p>
+                        </div>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <a href="tel:+919637743855">+91 9637743855</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:jishnurahegaonkar@gmail.com">jishnurahegaonkar@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>303, Shiv Apartment, Nanded</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fab fa-linkedin"></i>
+                                <div>
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/jishnu-rahegaonkar/" target="_blank">Jishnu Rahegaonkar</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="project-card" data-category="web">
-                <div class="project-image">
-                    <img src="timebound1.png" alt="TimeBound">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h3>Task Flow</h3>
-                            <p>Advanced time management with workflow optimization</p>
-                            <div class="project-links">
-                                <a href="https://time-bound.netlify.app/" target="_blank" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                                <a href="#" class="project-link project-details-trigger" data-project="time-bound">
-                                    <i class="fas fa-info-circle"></i>
-                                </a>
+
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" required>
+                                <div class="form-line"></div>
                             </div>
-                        </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" required>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" required></textarea>
+                                <div class="form-line"></div>
+                            </div>
+                            <button type="submit" class="btn btn-send">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-        <div class="section-title">
-            <h2>Get In Touch</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-intro">
-                    <h3>Let's Talk!</h3>
-                    <p>Whether you have a project idea, a question, or just want to connect, I'd love to hear from you.
-                        Feel free to reach out using any of the methods below.</p>
-                </div>
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:jishnurahegaonkar@gmail.com">jishnurahegaonkar@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>India</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <div>
-                            <h4>Linkedln</h4>
-                            <a href="https://www.linkedin.com/in/jishnu-rahegaonkar/" target="_blank">Jishnu Rahegaonkar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="contact-form-container">
-                <form id="contact-form" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" required>
-                        <div class="form-line"></div>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" required>
-                        <div class="form-line"></div>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" required>
-                        <div class="form-line"></div>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" required></textarea>
-                        <div class="form-line"></div>
-                    </div>
-                    <button type="submit" class="btn btn-send">
-                        <span>Send Message</span>
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
+        <div class="container footer-content">
             <div class="footer-logo">
                 <div class="logo">JR</div>
-                <p>Turning Ideas into Reality</p>
+                <p>Turning ideas into reality.</p>
             </div>
+
             <div class="social-links">
-                <a href="https://github.com/JishnuDevTech" target="_blank" class="social-link">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://discord.com/users/1351231799317233705" class="social-link">
-                    <i class="fab fa-discord"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/jishnu-rahegaonkar/" class="social-link">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://x.com/JRahegaonkar?t=rtWdWhpSeu-es-S5Ax-Dog&s=09" class="social-link">
-                    <i class="fab fa-x"></i>
-                </a>
+                <a href="https://github.com/JishnuDevTech" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://discord.com/users/1351231799317233705" class="social-link"><i class="fab fa-discord"></i></a>
+                <a href="https://www.linkedin.com/in/jishnu-rahegaonkar/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/JRahegaonkar?t=rtWdWhpSeu-es-S5Ax-Dog&s=09" class="social-link"><i class="fab fa-x"></i></a>
             </div>
         </div>
+
         <div class="footer-bottom">
             <p>&copy; 2025 Jishnu Rahegaonkar. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <div class="back-to-top">
-        <i class="fas fa-chevron-up"></i>
-    </div>
+    <div class="back-to-top"><i class="fas fa-chevron-up"></i></div>
 
-    <!-- Project Modal -->
     <div class="project-modal">
         <div class="modal-content">
             <div class="modal-close">&times;</div>
-            <div class="modal-body">
-                <!-- Content will be dynamically inserted here -->
-            </div>
+            <div class="modal-body"></div>
         </div>
     </div>
 

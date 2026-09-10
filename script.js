@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const typedTextSpan = document.querySelector('.typed-text');
     const cursorSpan = document.querySelector('.cursor-typing');
     
-    const textArray = ['Software Developer', 'Web Developer', 'UI/UX Enthusiast', 'Problem Solver', 'App Developer'];
+    const textArray = ['Web Developer', 'Full Stack Engineer', 'UI/UX Enthusiast', 'Problem Solver'];
     const typingDelay = 110;
     const erasingDelay = 70;
     const newTextDelay = 2000;
@@ -230,41 +230,49 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const projectDetails = {
         'Streaky': {
-            title: 'Streaky Website',
-            description: 'Streaky is a habit-tracking web app designed to help users turn small daily actions into powerful streaks. It makes progress visible, consistency rewarding, and habit-building simple.',
+            title: 'Streaky',
+            description: 'Built Streaky, a responsive habit-tracking web app that helps users stay consistent by tracking daily streaks and maintaining a clean, motivating experience on both mobile and desktop.',
             features: [
-                'Secure authentication with Email & Google',
-                'Visual progress to keep motivation high',
-                'Fully responsive — smooth on mobile & desktop',
-                'Settings for User ease',
+                'Daily streak tracking and habit consistency flow',
+                'Clean UI focused on engagement and usability',
+                'Responsive design for mobile and desktop',
+                'Smooth user experience with simple interaction design'
             ],
             technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
-            screenshots: ['streaky2.png', 'streaky3.png']
+            screenshots: [
+                'assets/projects/streaky/screenshot-1.png',
+                'assets/projects/streaky/screenshot-2.png'
+            ]
         },
-        'bunk-smart': {
-            title: 'Bunk Smart',
-            description: 'Bunk Smart is a smart attendance tracking web app designed for students to monitor attendance, analyze bunk patterns, and make informed decisions about class participation.',
+        'daily-task-focus': {
+            title: 'Daily Task Focus',
+            description: 'Developed a productivity-focused web application with task management, a Pomodoro timer, and analytics features that help users improve focus and track productivity through an intuitive interface.',
             features: [
-                'Visual analytics dashboard',
-                'Bunk prediction insights',
-                'Productivity analytics and reports',
-                'Cloud-based data storage',
-                'Responsive UI (Mobile + Desktop)'
+                'Task management and organization flow',
+                'Pomodoro timer for focused work sessions',
+                'Productivity analytics and tracking',
+                'User-friendly interface designed for clarity'
             ],
-            technologies: ['HTML', 'CSS', 'Firebase', 'JAVA SCRIPT', 'TYPE SCRIPT'],
-            screenshots: ['bunk2.png', 'bunk3.png']
+            technologies: ['HTML', 'CSS', 'JavaScript', 'Database'],
+            screenshots: [
+                'assets/projects/timebound/screenshot-1.png',
+                'assets/projects/timebound/screenshot-2.png'
+            ]
         },
-        'time-bound': {
-            title: 'TimeBound',
-            description: 'This platform is a high-performance productivity ecosystem that seamlessly integrates a precision Pomodoro time-management system with a dynamic daily task manager.',
+        'portfolio': {
+            title: 'Portfolio Website',
+            description: 'A personal portfolio website built to showcase my projects, skills, and professional identity with a polished, modern presentation.',
             features: [
-                'Responsive layout',
-                'User profiles and task management system',
-                'Time Management categorization and filtering',
-                'Settings for User ease',
+                'Personal branding and portfolio storytelling',
+                'Responsive layout and clean visual hierarchy',
+                'Project showcase and contact presentation',
+                'Professional single-page experience'
             ],
-            technologies: ['HTML', 'CSS', 'Firebase', 'JAVA SCRIPT',],
-            screenshots: ['timebound2.png', 'timebound3.png']
+            technologies: ['HTML', 'CSS', 'JavaScript'],
+            screenshots: [
+                'assets/projects/bunk-smart/screenshot-1.png',
+                'assets/projects/bunk-smart/screenshot-2.png'
+            ]
         }
     };
     
